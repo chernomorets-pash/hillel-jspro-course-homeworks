@@ -1,0 +1,48 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
+/* variables */
+:root {
+    /* color */
+    --body-color: linear-gradient(136.16deg, rgba(186, 237, 200, 0.97) 12.91%, #EAFDD3 87.68%);
+    --main-color: linear-gradient(136.16deg, rgba(91, 135, 75, 0.76) 12.91%, #0C3720 87.68%);
+    /* fonts */
+    --body-font: 'Zen Kaku Gothic New', sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.app {
+    height: 100vh;
+    background: var(--body-color);
+    font-family: var(--body-font);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.main {
+    overflow: hidden;
+    width: 90%;
+    height: 80%;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: 26px 24px 90px rgba(87, 183, 171, 0.19);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.main__left {
+    width: 50%;
+}
+.main__img {
+    max-width: 300px;
+}
+.main__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
