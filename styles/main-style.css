@@ -44,5 +44,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 50%;
 }
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.calculator__button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin: 0.2rem;
+    cursor: pointer;
+}
+.calculator__result {
+    font-size: 2rem;
+}
+

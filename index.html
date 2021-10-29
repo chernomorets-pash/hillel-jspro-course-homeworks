@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main-style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>Home Work #1</title>
 </head>
 
@@ -18,9 +20,24 @@
         </div>
         <div class="main__right">
             <h1 class="main__title">Hello <span class="main__title__item"> &ltjavascript&gt </span></h1>
+            <!-- calculator homework v1.1 -->
+            <section class="calculator">
+                <h2 class="calculator__heading">Candy calculator</h2>
+                <input type="text" id="numOne" maxlength="5" placeholder="enter first number: ">
+                <input type="text" id="numTwo" maxlength="5" placeholder="enter second number: ">
+                <div class="button__wrapper">
+                    <button class="calculator__button" onclick="plus()">+</button>
+                    <button class="calculator__button" onclick="minus()">-</button>
+                    <button class="calculator__button" onclick="multiply()">*</button>
+                    <button class="calculator__button" onclick="divide()">/</button>
+                </div>
+                <span>result:</span>
+                <div class="calculator__result" id="output"></div>
+            </section>
         </div>
     </section>
-    <script src="./app/script.js"></script>
+    <script src="./app/script.js" async></script>
+    <script src="./app/calculator1.1.js" async></script>
 </body>
 
 </html>

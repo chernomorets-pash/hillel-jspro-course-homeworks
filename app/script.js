@@ -1,14 +1,12 @@
 "use strict";
-// 1.  Поздороваться с пользователем - "Hello!"
-alert ('Hello!');
-// 2. Спросить пользователь как его зовут - "What is your name?"
-const userName = prompt("What is your name?");
-// 3. Сказать пользователю - "Nice to meet you, имя_пользователя!"
-alert (`Nice to meet you, ${userName}!`);
-// 4. Спросить у пользователя сколько ему полных лет
-const userAge = +prompt (`How old are you, ${userName}`);
-// 5. На основании ответа пользователя вычислить год рождения пользователя и вывести его
-const todaysDate = new Date().toLocaleDateString().slice(6);
-const userYear = todaysDate - userAge;
-alert (`It was a Lucky year in ${userYear} when you was born!`);
+// Homework 2. Калькулятор V1
+// 1. Просим пользователя ввести одно число.
+const firstUserNum = +prompt ("Hi, and welcome to second homework! Would you like to see some math? Please, enter first number: ");
+const secondUserNum = +prompt ("Nice! and now enter your secont number: ");
+console.log (`Calculations were finished!
+    Sum: ${firstUserNum} + ${secondUserNum} = ${firstUserNum + secondUserNum}
+    Diff: ${firstUserNum} - ${secondUserNum} = ${firstUserNum - secondUserNum}
+    Mult: ${firstUserNum} * ${secondUserNum} = ${firstUserNum * secondUserNum}
+    Div: ${firstUserNum} / ${secondUserNum} = ${firstUserNum / secondUserNum}
+`);
 
