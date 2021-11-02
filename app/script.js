@@ -24,4 +24,6 @@ if (userOperationMath === 'cos') {
     alert(`cos ${userNumMath} = ${Math.cos(userNumMath)}`);
 } else if (userOperationMath === 'sin') {
     alert(`sin ${userNumMath} = ${Math.sin(userNumMath)}`)
-}; 
+} else {
+    alert("wrong input value, try again");
+}
