@@ -1,12 +1,27 @@
 "use strict";
-// Homework 2. Калькулятор V1
-// 1. Просим пользователя ввести одно число.
-const firstUserNum = +prompt ("Hi, and welcome to second homework! Would you like to see some math? Please, enter first number: ");
-const secondUserNum = +prompt ("Nice! and now enter your secont number: ");
-console.log (`Calculations were finished!
-    Sum: ${firstUserNum} + ${secondUserNum} = ${firstUserNum + secondUserNum}
-    Diff: ${firstUserNum} - ${secondUserNum} = ${firstUserNum - secondUserNum}
-    Mult: ${firstUserNum} * ${secondUserNum} = ${firstUserNum * secondUserNum}
-    Div: ${firstUserNum} / ${secondUserNum} = ${firstUserNum / secondUserNum}
-`);
+// Homework 3. Калькулятор V1.1
+const userNumOne = +prompt ('enter first number:', 0);
+const userNumTwo = +prompt ('enter second number', 0);
+const userOperation = prompt('Enter operation: + - * / pow');
 
+if (userOperation === '+') {
+    alert(`${userNumOne}+${userNumTwo}=${userNumOne + userNumTwo}`);
+} else if (userOperation === '-') {
+    alert(`${userNumOne}-${userNumTwo}=${userNumOne - userNumTwo}`);
+} else if (userOperation === '*') {
+    alert(`${userNumOne}*${userNumTwo}=${userNumOne * userNumTwo}`);
+} else if (userOperation === '/') {
+    alert(`${userNumOne}/${userNumTwo}=${userNumOne / userNumTwo}`);
+} else if (userOperation === 'pow'){
+    alert (`(number ${userNumOne} in power of ${userNumTwo} = ${Math.pow(userNumOne, userNumTwo)}`);
+} else {
+    alert ('unknown error, please try again');
+};
+
+const userNumMath = +prompt ('Enter your number for Math operations', 0);
+const userOperationMath = prompt('Enter what you like to perform: cos, sic');
+if (userOperationMath === 'cos') {
+    alert(`cos ${userNumMath} = ${Math.cos(userNumMath)}`);
+} else if (userOperationMath === 'sin') {
+    alert(`sin ${userNumMath} = ${Math.sin(userNumMath)}`)
+}; 

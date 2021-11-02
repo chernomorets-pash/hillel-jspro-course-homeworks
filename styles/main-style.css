@@ -3,8 +3,8 @@
 /* variables */
 :root {
     /* color */
-    --body-color: linear-gradient(136.16deg, rgba(186, 237, 200, 0.97) 12.91%, #EAFDD3 87.68%);
-    --main-color: linear-gradient(136.16deg, rgba(91, 135, 75, 0.76) 12.91%, #0C3720 87.68%);
+    --body-color: linear-gradient(219.03deg, #F4C7EA 4.12%, #FDE5EC 95.2%);
+    --main-color: linear-gradient(136.16deg, rgba(46, 9, 22, 0.97) 12.91%, rgba(32, 10, 43, 0.69) 87.68%);
     /* fonts */
     --body-font: 'Zen Kaku Gothic New', sans-serif;
 
@@ -35,9 +35,17 @@
     align-items:center;
 }
 .main__left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 50%;
+    height: 100%;
+}
+.main-left h4 {
+    text-align: center;
 }
 .main__img {
+    
     max-width: 300px;
 }
 .main__right {
@@ -56,6 +64,10 @@
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 5px;
+}
+.calculator__heading {
+    font-size: 1.2rem;
+    font-weight: 100;
 }
 .calculator__button {
     background-color: rgba(255, 255, 255, 0);
