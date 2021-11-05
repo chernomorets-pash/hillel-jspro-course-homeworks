@@ -5,44 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main-style.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <!-- icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <title>Home Work #3</title>
+    <link rel="stylesheet" href="./styles/apple-styles.css">
+    <script src="./app/app.js" async></script>
+    <script src="./app/calc2-0.js"></script>
+    <title>Homework Hillel JS</title>
 </head>
 
-<body class="app">
-    <!-- Homeworks boilerplate -->
-    <section class="main">
-        <div class="main__left">
-            <img src="./images/skull.png" alt="skull" class="main__img">
+<body class="apple">
+    <header class="header">
+        <nav class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__logo"><img src="./images/aple-log.png" alt="apple logo"
+                            class="nav__logo-img"></a></li>
+                <li class="nav__item"><a href="#" class="nav__link">File</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Edit</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">View</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Special</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="js-wrapper">
+            <div class="js__header">
+                <button id="exit__btn"></button>
+                <h2 class="js-wrapper__title">javascript app</h2>
+            </div>
+            <hr>
+            <h3 class="js__title">UI non-friendly calculator</h3>
+            <div class="js__menu">
+                <!-- INPUTS -->
+                <input type="text" id="numOne" maxlength="5" placeholder="enter first number: ">
+                <input type="text" id="numTwo" maxlength="5" placeholder="enter second number: ">
+                <!-- Buttons -->
+                <button class="js__btn-spl" onclick="plus()">plus</button>
+                <button class="js__btn-spl" onclick="minus()">minus</button>
+                <button class="js__btn-spl" onclick="multiply()">multiply</button>
+                <button class="js__btn-spl" onclick="divide()">divide</button>
+                <button class="js__btn-spl" onclick="pow()">pow</button>
+                <!-- <button class="js__btn-spl">plus</button>
+                <button class="js__btn-spl">minus</button>
+                <button class="js__btn-spl">multiply</button>
+                <button class="js__btn-spl">divide</button>
+                <button class="js__btn-spl">pow</button>
+                <button class="js__btn-cx">cos</button>
+                <button class="js__btn-cx">sin</button> -->
+            </div>
+            <span>result:</span>
+            <div class="calculator__result" id="output"></div>
         </div>
-        <div class="main__right">
-            <!-- calculator homework v1.1.1 -->
-            <section class="calculator">
-                <h2 class="calculator__heading">Candy calculator v1.1.1</h2>
-                <input type="text" id="numOne" maxlength="5" placeholder="first number (x): ">
-                <input type="text" id="numTwo" maxlength="5" placeholder="second number (y): ">
-                <div class="button__wrapper">
-                    <button class="calculator__button" onclick="plus()">+</button>
-                    <button class="calculator__button" onclick="minus()">-</button>
-                    <button class="calculator__button" onclick="multiply()">*</button>
-                    <button class="calculator__button" onclick="divide()">/</button>
-                    <button class="calculator__button" onclick="pow()"><sub>X</sub><sup>y</sup></button>
-                </div>
-                <div class="button-wrapper">
-                    <h3 class="calculator__heading">only for x</h3>
-                    <button class="calculator__button" onclick="cos()">cos</button>
-                    <button class="calculator__button" onclick="sin()">sin</button>
-                </div>
-                <span>result:</span>
-                <div class="calculator__result" id="output"></div>
-            </section>
-        </div>
-    </section>
-    <script src="./app/script.js" async></script>
-    <script src="./app/calculator1.1.js" async></script>
+        <img src="./images/bin.png" alt="" class="main__icon">
+    </main>
 </body>
 
 </html>
