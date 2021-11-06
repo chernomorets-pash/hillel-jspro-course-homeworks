@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/apple-styles.css">
     <script src="./app/app.js" async></script>
-    <script src="./app/calc2-0.js"></script>
+    <!-- <script src="./app/calc2-0.js"></script> -->
     <title>Homework Hillel JS</title>
 </head>
 
@@ -35,24 +35,19 @@
             <h3 class="js__title">UI non-friendly calculator</h3>
             <div class="js__menu">
                 <!-- INPUTS -->
-                <input type="text" id="numOne" maxlength="5" placeholder="enter first number: ">
-                <input type="text" id="numTwo" maxlength="5" placeholder="enter second number: ">
+                <input type="text" id="numOne" class="js__input" maxlength="5" placeholder="enter first value: ">
+                <input type="text" id="numTwo" class="js__input" maxlength="5" placeholder="enter second value: ">
                 <!-- Buttons -->
-                <button class="js__btn-spl" onclick="plus()">plus</button>
-                <button class="js__btn-spl" onclick="minus()">minus</button>
-                <button class="js__btn-spl" onclick="multiply()">multiply</button>
-                <button class="js__btn-spl" onclick="divide()">divide</button>
-                <button class="js__btn-spl" onclick="pow()">pow</button>
-                <!-- <button class="js__btn-spl">plus</button>
-                <button class="js__btn-spl">minus</button>
-                <button class="js__btn-spl">multiply</button>
-                <button class="js__btn-spl">divide</button>
-                <button class="js__btn-spl">pow</button>
-                <button class="js__btn-cx">cos</button>
-                <button class="js__btn-cx">sin</button> -->
+                <button class="js__btn" onclick="plus()">plus</button>
+                <button class="js__btn" onclick="minus()">minus</button>
+                <button class="js__btn" onclick="multiply()">multiply</button>
+                <button class="js__btn" onclick="divide()">divide</button>
+                <button class="js__btn" onclick="pow()">x<sup>y</sup></button>
+                <button class="js__btn" onclick="sin()">sin</button>
+                <button class="js__btn" onclick="cos()">cos</button>
             </div>
-            <span>result:</span>
-            <div class="calculator__result" id="output"></div>
+            <span class="js__result">result: <span class="calculator__result" id="output"></span></span>
+
         </div>
         <img src="./images/bin.png" alt="" class="main__icon">
     </main>

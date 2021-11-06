@@ -30,6 +30,7 @@ button,
 input {
     border: none;
     outline: none;
+    font-family: "Fairfax";
 }
 button {
     cursor: pointer;
@@ -80,8 +81,8 @@ button {
     right: 5%;
 }
 .js-wrapper {
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height: 30%;
     background-color: whitesmoke;
     position: absolute;
     left: 20%;
@@ -89,6 +90,8 @@ button {
     border: 1px solid black;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
+    min-height: 135px;
+    max-width: 435px;
 }
 .js-wrapper__title {
     text-align: center;
@@ -116,4 +119,32 @@ button {
 .js__header {
     display: flex;
     justify-content: center;
+}
+.js__title {
+    text-align: center;
+    color: gray;
+    font-size: small;
+}
+.js__menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.js__input {
+    width: 50%;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+.js__btn {
+    flex-grow: 1;
+    width:25%;
+    border: 0.5px dotted black;
+    padding: 1px;
+    margin: 1px;
+}
+.js__btn:hover {
+    color: gray;
+}
+.js__result {
+    margin: 0 20px;
 }
