@@ -54,29 +54,27 @@ function pow() {
     numOne = Number(numOne);
     numTwo = document.getElementById('numTwo').value;
     numTwo = Number(numTwo);
-    result = Math.pow(numOne, numTwo);
+    result = `${numOne}pow${numTwo} = ${Math.pow(numOne, numTwo)}`;
     document.getElementById('output').innerHTML = result;
+    history.push(`${numOne}pow${numTwo} = ${Math.pow(numOne, numTwo)}`);
 }
 function cos() {
-    let numOne, numTwo, result;
+    let numOne, result;
     numOne = document.getElementById('numOne').value;
     numOne = Number(numOne);
-    numTwo = document.getElementById('numTwo').value;
-    numTwo = Number(numTwo);
-    result = Math.cos(numOne);
+    result = `cos of ${numOne} = ${Math.cos(numOne)}`;
     document.getElementById('output').innerHTML = result;
+    history.push(`cos of ${numOne} = ${Math.cos(numOne)}`);
 }
 function sin() {
-    let numOne, numTwo, result;
+    let numOne, result;
     numOne = document.getElementById('numOne').value;
     numOne = Number(numOne);
-    numTwo = document.getElementById('numTwo').value;
-    numTwo = Number(numTwo);
-    result = Math.sin(numOne);
+    result = `sin of ${numOne} = ${Math.sin(numOne)}`;
     document.getElementById('output').innerHTML = result;
+    history.push(`sin of ${numOne} = ${Math.sin(numOne)}`);
 }
 // History
-
 let historyList = document.querySelector('.history');
 let btnHistory = document.querySelector('#btn-his');
 let historyItems = historyList.innerText;
