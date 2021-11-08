@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/apple-styles.css">
     <script src="./app/app.js" async></script>
-    <!-- <script src="./app/calc2-0.js"></script> -->
+    <script src="./app/calc2-0.js"></script>
     <title>Homework Hillel JS</title>
 </head>
 
@@ -45,11 +45,15 @@
                 <button class="js__btn" onclick="pow()">x<sup>y</sup></button>
                 <button class="js__btn" onclick="sin()">sin</button>
                 <button class="js__btn" onclick="cos()">cos</button>
+                <button class="js__btn" id="btn-his">history</button>
             </div>
             <span class="js__result">result: <span class="calculator__result" id="output"></span></span>
-
+            <div class="history-wrapper window-hide">
+                <span class="history__item">History:</span>
+                <p class="history"></p>
+            </div>
         </div>
-        <img src="./images/bin.png" alt="" class="main__icon">
+        <img src="./images/bin.png" alt="bin" class="main__icon">
     </main>
 </body>
 

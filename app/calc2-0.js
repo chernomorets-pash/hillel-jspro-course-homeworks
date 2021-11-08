@@ -1,7 +1,7 @@
 "use strict";
 // Calculator v 2.0
 let operation;
-let history = [];
+let historyC = [];
 let userNumberOne;
 let userNumberTwo;
 let result = true;
@@ -27,35 +27,35 @@ if (operation < 6) {
     userNumberTwo = +prompt('Enter operant #2');
     if (operation == 1) {
         console.log(`Operation ${userNumberOne} + ${userNumberTwo} finished with result = ${userNumberOne+userNumberTwo}`);
-        history.push(`Operation ${userNumberOne} + ${userNumberTwo} finished with result = ${userNumberOne+userNumberTwo}`)
+        historyC.push(`Operation ${userNumberOne} + ${userNumberTwo} finished with result = ${userNumberOne+userNumberTwo}`)
     }else if (operation == 2) {
         console.log(`Operation ${userNumberOne} - ${userNumberTwo} finished with result = ${userNumberOne-userNumberTwo}`);
-        history.push(`Operation ${userNumberOne} - ${userNumberTwo} finished with result = ${userNumberOne-userNumberTwo}`)
+        historyC.push(`Operation ${userNumberOne} - ${userNumberTwo} finished with result = ${userNumberOne-userNumberTwo}`)
     }else if (operation == 3) {
         console.log(`Operation ${userNumberOne} * ${userNumberTwo} finished with result = ${userNumberOne*userNumberTwo}`);
         history.push(`Operation ${userNumberOne} * ${userNumberTwo} finished with result = ${userNumberOne*userNumberTwo}`)
     }else if (operation == 4) {
         console.log(`Operation ${userNumberOne} / ${userNumberTwo} finished with result = ${userNumberOne/userNumberTwo}`);
-        history.push(`Operation ${userNumberOne} / ${userNumberTwo} finished with result = ${userNumberOne/userNumberTwo}`)
+        historyC.push(`Operation ${userNumberOne} / ${userNumberTwo} finished with result = ${userNumberOne/userNumberTwo}`)
     }else if (operation == 5) {
         console.log(`Operation ${userNumberOne} ** ${userNumberTwo} finished with result = ${userNumberOne**userNumberTwo}`);
-        history.push(`Operation ${userNumberOne} ** ${userNumberTwo} finished with result = ${userNumberOne**userNumberTwo}`)
+        historyC.push(`Operation ${userNumberOne} ** ${userNumberTwo} finished with result = ${userNumberOne**userNumberTwo}`)
     }
     // COS and SIN operations and adding to history
 }else if (operation >= 6 && operation <= 7) {
     userNumberOne = +prompt('Enter operant for cos/sin calculations: ', 0);
     if (operation == 6) {
         console.log(`Operation cos of:${userNumberOne} finished with result = ${Math.cos(userNumberOne)}`)
-        history.push(`Operation cos of:${userNumberOne} finished with result = ${Math.cos(userNumberOne)}`)
+        historyC.push(`Operation cos of:${userNumberOne} finished with result = ${Math.cos(userNumberOne)}`)
     } else if (operation == 7) {
         console.log(`Operation sin of:${userNumberOne} finished with result = ${Math.sin(userNumberOne)}`)
-        history.push(`Operation sin of:${userNumberOne} finished with result = ${Math.sin(userNumberOne)}`)
+        historyC.push(`Operation sin of:${userNumberOne} finished with result = ${Math.sin(userNumberOne)}`)
     }
 } else if (operation == 8){
     // calculationg number of loops and printingall operatio to console
-    for (let i = 0; i < history.length; i++) {
+    for (let i = 0; i < historyC.length; i++) {
         console.log(`
-                    History [${i}]: ${history[i]}
+                    History [${i}]: ${historyC[i]}
         `);
     }
 }
